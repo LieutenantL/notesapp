@@ -2,6 +2,8 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import reactLogo from "./assets/react.svg";
+import "./App.css";
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,3 +24,17 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+
+        <h1>Hello from Amplify</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
